@@ -1,0 +1,8 @@
+1. SDT Bottom up and Top down(49-51) :
+https://youtu.be/3uQDf48zwuU?si=LX0W3FfYYsF7LcuM
+
+Document : https://itsmeebin.wordpress.com/wp-content/uploads/2020/04/module-4.pdf
+
+
+2. Extra topics(Lec 35 - 42): SDD, Annotated parse tree, Dependency Graph, SDT Infix to Postfix, Syntax Tree  
+https://youtube.com/playlist?list=PLXj4XH7LcRfC9pGMWuM6UWE3V4YZ9TZzM&si=JV_iu4bBkVbIbwYM

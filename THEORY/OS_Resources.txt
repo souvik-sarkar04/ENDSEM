@@ -6,4 +6,7 @@ https://youtu.be/l86gLlzWdd0?si=lwrKP-2dnqY4iyFX
 https://www.geeksforgeeks.org/difference-between-multilevel-queue-mlq-and-multi-level-feedback-queue-mlfq-cpu-scheduling-algorithms/ 
 
 3. Best videos on synchronisation and semaphores (Neso Academy Lec 56 - 71): 
-https://youtu.be/ph2awKa8r5Y?si=lEOseS9x1XcsoDFR                 
+https://youtu.be/ph2awKa8r5Y?si=lEOseS9x1XcsoDFR  
+
+Locking : https://www.geeksforgeeks.org/lock-variable-synchronization-mechanism/
+
