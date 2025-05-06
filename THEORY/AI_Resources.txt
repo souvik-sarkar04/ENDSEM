@@ -1,7 +1,16 @@
-  1. https://drive.google.com/drive/u/1/folders/1pavnZYTEUnVMkjGont6t7m2M1BidvptZ
+PRE MIDSEM : 
+1. Naive Bayes :
+https://youtube.com/playlist?list=PL7dekYHzITisbcC_qP1LvXYvtsHKti6_I&si=aKcMB86G7BMup56X
+
+1. https://drive.google.com/drive/u/1/folders/1pavnZYTEUnVMkjGont6t7m2M1BidvptZ
   NEURAL NETWORKS folder highly relevant, ARTIFICIAL INTELLIGENCE folder -> study relevant topics
 
 
 
 CNN:
 https://youtube.com/playlist?list=PLv8Cp2NvcY8CaSVfCIyg5mvek8JvaD7tE&si=vlyF9JQjczhZe4ZG
+
+Reinforcement Learning : 
+https://youtube.com/playlist?list=PLtU2RuPOzscNxcZS5sIUrzpKCtF2LheB9&si=d-ewOKkOvxrwV9u4
+
+https://youtube.com/playlist?list=PLTl9hO2Oobd9kS--NgVz0EPNyEmygV1Ha&si=7WViPF58TvuTsrsq
