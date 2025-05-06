@@ -1,3 +1,13 @@
+NOTE : Entire Gatehub playlist is relevant for Compiler Construction Syllabus
+
+PRE-MIDSEM : 
+
+1. Thompson Constrution for Regular Expression to DFA:
+https://youtu.be/vt2x0W_jcPU?si=oAAyhbR1cqjTWLxD
+
+Regular Expression to DFA using nullable, firstpos, lastpos, followpos : 
+https://youtu.be/G8i_2CUHP_Y?si=haKMf49ku_WqN7rL
+
 1. SDT Bottom up and Top down(49-51) :
 https://youtu.be/3uQDf48zwuU?si=LX0W3FfYYsF7LcuM
 
@@ -6,3 +16,24 @@ Document : https://itsmeebin.wordpress.com/wp-content/uploads/2020/04/module-4.p
 
 2. Extra topics(Lec 35 - 42): SDD, Annotated parse tree, Dependency Graph, SDT Infix to Postfix, Syntax Tree  
 https://youtube.com/playlist?list=PLXj4XH7LcRfC9pGMWuM6UWE3V4YZ9TZzM&si=JV_iu4bBkVbIbwYM
+
+3. Data flow analysis(Class notes example):
+https://youtu.be/vi9DizX9R8g?si=iRmmqDg060XrdkfW
+
+4. Topics based on PYQS:
+
+a. Check whether grammar is LL(1), LR(0), LR(1), SLR(1), CLR(1), LALR(1)
+https://youtu.be/hkUCwLOn8FE?si=7xL4IRITADIQYF2P
+https://youtu.be/J4ZME5KOB-s?si=7OYD6LvZs2S1KtrF
+https://youtu.be/Z1Hu9TIef9k?si=KbZcuBsHnT5Jubl5
+https://youtu.be/sMxqUQc_jHQ?si=QuCh9YC6oJNajH35
+https://youtu.be/GOlsYofJjyQ?si=cYRst3MuEd5ZimLi    
+
+
+b. Dangling else problem
+https://youtu.be/0d3fyvw8syM?si=wQmLLu--dX1fet-v
+
+c. Next Use Info :
+https://youtu.be/awhrgKC4lhA?si=UjadYPffIHmhVB-L
+https://youtu.be/QOjXe2u7Pf8?si=OQJoT2QwlHzEum_E
+https://youtu.be/RHnsJjHdhS8?si=IdIfxZ-KVzHImc-C
