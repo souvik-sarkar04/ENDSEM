@@ -1,16 +1,28 @@
-PRE MIDSEM : 
-1. Naive Bayes :
+PRE MIDSEM :
+
+1. AI Searches(only watch relevant videos):
+https://youtube.com/playlist?list=PL4gu8xQu0_5JrWjrWNMmXNx4zFwRrpqCR&si=acqcloHW0-JljLzk
+
+2. Naive Bayes(only watch relevant videos) :
 https://youtube.com/playlist?list=PL7dekYHzITisbcC_qP1LvXYvtsHKti6_I&si=aKcMB86G7BMup56X
+
+3. Neural networks(All related videos will come in suggestions):
+https://youtu.be/quCEmM2JBbk?si=5Vkin2Guk5ZGS2Kn
+https://youtu.be/tUoUdOdTkRw?si=en1gkNHET7URRzNn
 
 1. https://drive.google.com/drive/u/1/folders/1pavnZYTEUnVMkjGont6t7m2M1BidvptZ
   NEURAL NETWORKS folder highly relevant, ARTIFICIAL INTELLIGENCE folder -> study relevant topics
 
+2. Deep Learning optimisers: (Video 1,3,6,7)
+https://youtube.com/playlist?list=PLKnIA16_RmvYhD5pqAeVu3j_jTjnTJIW2&si=VTEWxicDUpwQ5Jp1
 
+3.CNN:
+https://youtube.com/playlist?list=PLv8Cp2NvcY8CaSVfCIyg5mvek8JvaD7tE&si=vlyF9JQjczhZe4ZG(study only relevant videos)
 
-CNN:
-https://youtube.com/playlist?list=PLv8Cp2NvcY8CaSVfCIyg5mvek8JvaD7tE&si=vlyF9JQjczhZe4ZG
+4. Reinforcement Learning : 
 
-Reinforcement Learning : 
-https://youtube.com/playlist?list=PLtU2RuPOzscNxcZS5sIUrzpKCtF2LheB9&si=d-ewOKkOvxrwV9u4
+https://youtube.com/playlist?list=PLYgyoWurxA_8ePNUuTLDtMvzyf-YW7im2&si=lzpuzBdhP8U6yOM-(most recommneded, complies with class notes' formulae)
 
-https://youtube.com/playlist?list=PLTl9hO2Oobd9kS--NgVz0EPNyEmygV1Ha&si=7WViPF58TvuTsrsq
+https://youtube.com/playlist?list=PLTl9hO2Oobd9kS--NgVz0EPNyEmygV1Ha&si=7WViPF58TvuTsrsq(till video 6)
+
+https://youtube.com/playlist?list=PLtU2RuPOzscNxcZS5sIUrzpKCtF2LheB9&si=d-ewOKkOvxrwV9u4(good for practise, does not comply with class notes' formulae)
