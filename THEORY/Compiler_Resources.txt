@@ -37,3 +37,24 @@ c. Next Use Info :
 https://youtu.be/awhrgKC4lhA?si=UjadYPffIHmhVB-L
 https://youtu.be/QOjXe2u7Pf8?si=OQJoT2QwlHzEum_E
 https://youtu.be/RHnsJjHdhS8?si=IdIfxZ-KVzHImc-C
+
+5. Topics based on most probable Qs of endsem : 
+
+a. Flow graph of quick sort : 
+https://youtu.be/EOENHP5LL4A?si=BhpHp-WJxLLpb6qS
+
+b. TAC of matrix multiplication : 
+https://youtu.be/csiVsmJRde4?si=X2SOUzeNcGI6u09M
+
+c. Ex 6.2.2 (book - TAC of arrays - quadruples):
+Compiler Design: Ullman (Compiler Design) Edition 2 Exercise 6.2 Question 2 (Page No. 370)
+https://gateoverflow.in/320008/ullman-compiler-design-edition-2-exercise-6-2-question-2-page-no-370
+
+d. SDT to count 1s in a binary string(change the logic slightly to count number of 0s also):
+https://youtu.be/-GcxqlKbs1g?si=DNA8nVG_GoXDKUaA
+
+e. Dependency graph definition:
+https://www.geeksforgeeks.org/dependency-graph-in-compiler-design/
+
+f. Runtime Environment, Control Stack, Activation Tree and Parameter Passing theory :
+https://www.geeksforgeeks.org/runtime-environments-in-compiler-design/

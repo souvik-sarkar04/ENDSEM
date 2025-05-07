@@ -13,17 +13,20 @@ https://youtu.be/tUoUdOdTkRw?si=en1gkNHET7URRzNn
 1. https://drive.google.com/drive/u/1/folders/1pavnZYTEUnVMkjGont6t7m2M1BidvptZ
   NEURAL NETWORKS folder highly relevant, ARTIFICIAL INTELLIGENCE folder -> study relevant topics
 
-2. Deep Learning optimisers: (Video 1,3,6,7)
+2. Deep Learning optimisers: (All except 4)
 https://youtube.com/playlist?list=PLKnIA16_RmvYhD5pqAeVu3j_jTjnTJIW2&si=VTEWxicDUpwQ5Jp1
 
 3.CNN:
-a. Highly recommended playlist for basics of ANN, Back propagation, Gradient Descent, Vanishing Gradient, Optimisers,
+a. Highly recommended playlist for basics of ANN, Back propagation, Gradient Descent, Vanishing Gradient, Optimisers, Loss Functions
  CNN(Intro, Padding, Strides, Pooling, Architecture, CNN vs ANN)
 https://youtube.com/playlist?list=PLKnIA16_RmvYuZauWaPlRTC54KxSNLtNn&si=LZ5vULY0chh5oaVG
 https://youtube.com/playlist?list=PLv8Cp2NvcY8CaSVfCIyg5mvek8JvaD7tE&si=vlyF9JQjczhZe4ZG(study only relevant videos - Specific architectures like AlexNet, EfficientNEt, ResNet)
 
 4. Confusion Matrix, Precision, Recall, Accuracy :
 https://youtu.be/2osIZ-dSPGE?si=b9U4jbcVNAVAd9wU
+
+5. Overfitting, Underfitting, Bias, Variance:
+https://youtu.be/m5E6QxKFYlM?si=jh_yEP774hb9ej1K
 
 5. Reinforcement Learning : 
 
