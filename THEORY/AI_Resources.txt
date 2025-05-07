@@ -17,9 +17,15 @@ https://youtu.be/tUoUdOdTkRw?si=en1gkNHET7URRzNn
 https://youtube.com/playlist?list=PLKnIA16_RmvYhD5pqAeVu3j_jTjnTJIW2&si=VTEWxicDUpwQ5Jp1
 
 3.CNN:
-https://youtube.com/playlist?list=PLv8Cp2NvcY8CaSVfCIyg5mvek8JvaD7tE&si=vlyF9JQjczhZe4ZG(study only relevant videos)
+a. Highly recommended playlist for basics of ANN, Back propagation, Gradient Descent, Vanishing Gradient, Optimisers,
+ CNN(Intro, Padding, Strides, Pooling, Architecture, CNN vs ANN)
+https://youtube.com/playlist?list=PLKnIA16_RmvYuZauWaPlRTC54KxSNLtNn&si=LZ5vULY0chh5oaVG
+https://youtube.com/playlist?list=PLv8Cp2NvcY8CaSVfCIyg5mvek8JvaD7tE&si=vlyF9JQjczhZe4ZG(study only relevant videos - Specific architectures like AlexNet, EfficientNEt, ResNet)
 
-4. Reinforcement Learning : 
+4. Confusion Matrix, Precision, Recall, Accuracy :
+https://youtu.be/2osIZ-dSPGE?si=b9U4jbcVNAVAd9wU
+
+5. Reinforcement Learning : 
 
 https://youtube.com/playlist?list=PLYgyoWurxA_8ePNUuTLDtMvzyf-YW7im2&si=lzpuzBdhP8U6yOM-(most recommneded, complies with class notes' formulae)
 
