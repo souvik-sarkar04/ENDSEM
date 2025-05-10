@@ -10,3 +10,5 @@ https://youtu.be/ph2awKa8r5Y?si=lEOseS9x1XcsoDFR
 
 Locking : https://www.geeksforgeeks.org/lock-variable-synchronization-mechanism/
 
+4. Best videos on Deadlock, Prevntion, Avoidance and Recovery(Numericals), Banker's Algorithm and numericals(5.1 - 5.18):
+https://youtube.com/playlist?list=PLmXKhU9FNesSFvj6gASuWmQd23Ul5omtD&si=je0uEesNVLrReGM4
