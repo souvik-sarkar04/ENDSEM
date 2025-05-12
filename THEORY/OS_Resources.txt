@@ -14,5 +14,18 @@ Locking : https://www.geeksforgeeks.org/lock-variable-synchronization-mechanism/
 Memory management All topics(6.1 - 6.14):
 https://youtube.com/playlist?list=PLmXKhU9FNesSFvj6gASuWmQd23Ul5omtD&si=je0uEesNVLrReGM4
 
-5. Memory management leftover topics (Gate Smashers 5.13 - 5.17) : Multi level paging, Inverted paging, Thrashing, Segmentation
+5. Memory management leftover topics (Gate Smashers 5.13 - 5.26) : Multi level paging, Inverted paging, Thrashing, Segmentation, Virtual Memory,
+Page Replacement Algos(skip Overlay, TLB)
 https://youtu.be/PiEq1CoP0ds?si=Zck73HkrvSEUSjkF
+
+6. Disk Scheduling(Gate Smashers 6.1 - 6.9)
+
+7. Demand paging
+https://youtu.be/eWRnKH5IMNg?si=DGRxsSGQVzadfgYf
+https://youtu.be/Tnvnu0qeJBo?si=Nc3YBm3oncq0AyVa
+https://youtu.be/qiNDYs17aX8?si=GBkjw9zyujkhCF3o
+https://youtu.be/kTq7MoBczEs?si=R8_Cw6xUtekjghrd
+
+8. Thrashing :
+https://youtu.be/Su7-LgQz_p0?si=fzNjG9U6zu5xDH9-
+https://youtu.be/sMN1hQ5xfCs?si=0C7amj1xRQB-uE7O
