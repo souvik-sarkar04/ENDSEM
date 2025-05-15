@@ -1,0 +1,236 @@
+Resources : 
+
+1. Bharat Acharya - 1-22 + 26,28,30
+
+2. Most of the codes are in this playlist : 
+https://youtube.com/playlist?list=PLndX8heiWwErijxt7FpnRilO2KV4UhFmN&si=-NYmlKPpZs8TdrZv
+
+3. Binary to BCD:
+https://youtu.be/kjXoFnZKqOE?si=2C6LqesiIwJDvJjE
+
+
+Codes : 
+
+1. Binary to Gray Code - (Copy MSB of Binary, then take pairwise XOR of binary bits)
+
+LDA 2050H
+MOV B,A ; Store number
+RAR ; Right rotate binary number
+XRA B ; (Original number) ^ ( Right rotated number) = Gray code 
+STA 2051H
+HLT
+
+2. Binary to Gray Code for Array of elements
+
+LXI H, 2050H
+MOV C,M ; Store array size
+LXI D, 2056H ; Destination
+LOOP:
+INX H ;Point to current element of array
+; Next 7 lines are the same procedure as 1
+MOV A,M
+STC ; These 2 lines STC and CMC are safety checks to clear carry so that it does not manipulate result 
+CMC
+RAR
+XRA M
+STAX D
+INX D ; Updations
+DCR C
+JNZ LOOP
+HLT
+
+3. Gray to binary (Copy MSB of gray. Next bit of binary = Current bit of binary ^ Next bit of gray)
+(Procedure) - Accumulator initially stored with number. Then do (RAR of accumulator content ^ Original number) (7 times)
+
+LXI H, 2050H
+MOV A,M ; Store number in A
+MVI B, 07H
+LOOP:
+RAR ; Take right rotate
+XRA M ; Current ^ RAR(current)
+DCR B ; Do 7 times
+JNZ LOOP
+STA 2060H
+HLT
+
+
+4. Gray to binary for array of elements(The code structure is same as 2 -> the only difference is the loop2 that moves for 7 times to convert gray to binary)
+
+LXI H, 2050H
+MOV C,M ; Store array size
+LXI D, 2056H ; Destination
+LOOP:
+INX H ;Point to current element of array
+; Next 7 lines are the same procedure as 3
+MOV A,M
+MVI B, 07H
+LOOP2:
+RAR;
+XRA M
+DCR B
+JNZ LOOP2
+STAX D
+INX D ; Updations
+DCR C
+JNZ LOOP
+HLT
+
+5. BCD(decimal) to Hexadecimal(binary) :
+Procedure : i. Unpack the number -> lower nibble obtained by ANI 0FH, reverse of higher nibble = higher bit(obtained by ANI F0H -> then rotate 4 times to reverse it)
+ii. 0A(10)*reverse of higher nibble + lower nibble 
+
+
+LDA 2050H
+MOV B,A ; Store original number in B(for later use)
+ANI 0FH ; Extract lower nibble and store in C 
+MOV C,A 
+MOV A,B ; get back the original number from B
+ANI 0F0H ; Extract the higher nibble -> right rotate 4 times to REVERSE it
+RRC
+RRC
+RRC
+RRC
+MOV D,A ; Now store the REVERSED higher nibble in D 
+MVI E, 0AH ; In next few steps, apply simple multiplication of (content of D) with 0A(10)
+XRA A
+LOOP:
+ADD D
+DCR E
+JNZ LOOP
+ADD C ; Add the lower nibble to the result 
+STA 2051H
+HLT
+
+6. Binary(Hexadecimal) to BCD(Decimal):
+
+Part 1(Stores each digit of the BCD in seperate memory locations):
+
+LDA 2050H        ; Load binary number into A
+MVI B, 00H       ; B = 0 (hundreds digit)
+MOV C, B         ; C = 0 (tens digit)
+
+X:               ; --- Start hundreds loop
+CPI 64H          ; Compare A with 100 (64H)
+JC TENS          ; If A < 100, go to tens conversion
+SUI 64H          ; A = A - 100
+INR B            ; B = B + 1 (count 100s)
+JMP X            ; Repeat
+
+TENS:            ; --- Start tens loop
+CPI 0AH          ; Compare A with 10
+JC UNIT          ; If A < 10, go to unit store
+SUI 0AH          ; A = A - 10
+INR C            ; C = C + 1 (count tens)
+JMP TENS         ; Repeat
+
+UNIT:
+STA 2051H        ; Store units digit(value finally in A is the unit digit)
+MOV A,C
+STA 2052H        ; Store tens digit
+MOV A,B
+STA 2053H        ; Store hundreds digit
+HLT
+
+Part 2 : (Stores tens and unit digit in 1 memory location and hundredth digit in another memory location)
+
+LDA 2050H
+MVI B, 00H
+MOV C,B
+X:
+CPI 64H
+JC HUNT
+SUI 64H
+INR B
+JMP X
+
+
+HUNT:
+CPI 0AH
+JC UNIT
+SUI 0AH
+INR C
+JMP HUNT
+; Till here same as part 1
+
+UNIT: 
+;(Basically unpacking of BCD happens here -> C has the tens digit -> reverse it 4 times to get it as a proper ten digit(say C contained 05H initially, after 4 times reversal it becomes 50H, noww if we add E(the units digit say 4) -> the result is 54H which is desired))
+
+MOV D, C         ; D = tens
+MOV E, A         ; E = units (A has units now)
+MOV A, D
+RLC              ; A = D << 1
+RLC
+RLC
+RLC              ; A = D * 16
+ADD E            ; A = (tens × 16) + units
+STA 2051H        ; Store packed BCD (tens+units)
+
+MOV A, B
+STA 2052H        ; Store hundreds digit
+
+HLT
+
+
+7. Binary to ASCII (General procedure is that binary string length must be multiple of 8. Binary string should be broken into 8 bits -> then converted to corresponding decimal to get ASCII codes)
+
+The following algorithm effectively converts all HEXADECIMAL digits(0 to F) into corresponding ASCII codes
+Meaning if we get digit 0 -> ASCII code is 30H(48 in decimal as we know) -> that is why, if INPUT NUMBER < 0AH(10) -> then we only add 30H
+If we get letter say A -> ASCII code is 41H(65 in decimal as we know) -> that is why, if INPUT NUMBER >= 0AH(10) -> then we add extra 07H
+(0AH(10) + 30H + 07H = 41H)
+
+LDA 2050H     ; Load the binary value from memory into accumulator
+CPI 0AH       ; Compare with 0AH (decimal 10)
+JC LOOP       ; If A < 0AH (i.e., A is 0–9), jump to LOOP (means it's a digit)
+ADI 07H       ; Else, it's A–F → add 07H to make it proper before ASCII conversion
+LOOP:
+ADI 30H       ; Convert binary value to ASCII (0–9 or A–F)
+STA 2051H     ; Store the result
+HLT
+
+8. ASCII to Binary (Reverse procedure -> First subtract 30H from the INPUT number -> If result < A then that is our answer, if result >= A, then subtract 07H further)
+LDA 2050H
+SUI 30H
+CPI 0AH
+JC LOOP
+SUI 07H
+LOOP:
+STA 2051H
+HLT
+
+9. BCD Addition for 2 numbers
+
+MVI C, 00H
+LXI H, 2050H
+MOV A,M ; Store 1st number in A
+INX H
+ADD M ; Add 2nd number 
+DAA ; Decimal Adjust After Addition -> to add numbers like BCD
+JNC SKIP
+INR C ; Presence of carry 
+SKIP:
+STA 2055H ; No carry -> directly store the number
+MOV A,C
+STA 2056H
+HLT
+
+
+10. BCD Addition(for 5 numbers)
+
+MVI C, 00H
+MVI B, 05H
+LXI H, 2050H
+MOV A,M ; Store 1st number 
+DCR B ; Count of numbers decreases by 1
+LOOP2:
+INX H 
+ADD M ; Add next number 
+DAA ; Decimal Adjust After Addition -> to add numbers like BCD
+JNC LOOP
+INR C ; Carry presence 
+LOOP:
+DCR B ; Decrease count of numbers 
+JNZ LOOP2
+STA 2055H
+MOV A,C
+STA 2056H
+HLT
